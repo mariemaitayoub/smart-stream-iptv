@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+
+<body class="bg-[#1f2937]">
+    <header class="flex justify-between items-center bg-[#111827] p-6  rounded-lg">
+        <h1 class="text-[#ef4444] font-sans font-black text-2xl ">SMART <span class="text-[#f3f4f6]">STREAM</span></h1>
+        <img src="assets\images\profile.png" alt="profile" class="w-12 h-12 rounded-full ">
+    </header>
+    <!-- overflow hidden = stop scroll  -->
+    <div class="flex gap-12 p-12  overflow-hidden flex-1">
+        <aside class="w-80 p-8 border-gray-600 bg-[#111827]  rounded-2xl border-gray-600  ">
+            <input id="search-input" type="search" placeholder="Recherche..."
+                class="bg-gray-600 border rounded-lg w-full p-2.5 border-gray-800 mb-20">
+            <!-- overflow y-auto katkhalik t scroller up and down -->
+            <div id="channels-list" class="flex-1 flex flex-col gap-3 pr-2 overflow-y-auto ">
+                <!-- <div class="flex-1 flex flex-col items-center p-3 border-y border-gray-800  cursor-pointer">
+                    <div class="flex items-center gap-3">
+                        <img src="assets/images/2m.png" alt="2m" class="w-30 h-10">
+                        <div>
+                            <p class="text-sm text-gray-400">N° 1000</p>
+                            <p class="text-lg font-bold text-gray-300">2M</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 flex flex-col items-center p-3 border-y border-gray-800  cursor-pointer">
+
+                    <div class="flex items-center gap-3">
+                        <img src="assets/images/2m.png" alt="2m" class="w-30 h-10">
+                        <div>
+                            <p class="text-sm text-gray-400">N° 1000</p>
+                            <p class="text-lg font-bold text-gray-300">2M</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 flex flex-col items-center p-3 border-y border-gray-800  cursor-pointer">
+
+                    <div class="flex items-center gap-3">
+                        <img src="assets/images/2m.png" alt="2m" class="w-30 h-10">
+                        <div>
+                            <p class="text-sm text-gray-400">N° 1000</p>
+                            <p class="text-lg font-bold text-gray-300">2M</p>
+                        </div>
+                    </div> -->
+     
+            </div>
+    
+    </aside>
+    <main class="flex-1 rounded-2xl border border-gray-600 bg-[#111827] p-10">
+        <img id="preview-image" src="assets\images\2m.png" alt="" class="w-full h-56 border rounded-2xl  ">
+        <div class="border-t border-gray-700 pt-6 mt-6">
+            <h1 class="text-gray-400 text-xs font-bold uppercase mb-2 ">INFO AREA</h1>
+        </div>
+    </main>
+</div></div>
+
     <script src="./js/main.js" type="module"></script>
 </body>
+
 </html>
